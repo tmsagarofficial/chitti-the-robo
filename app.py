@@ -1,6 +1,8 @@
 from flask import Flask, render_template, send_from_directory, send_file
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
@@ -20,4 +22,4 @@ def log_file():
 
 @app.route('/health')
 def health():
-    return "OK"
+    return "OK",200
