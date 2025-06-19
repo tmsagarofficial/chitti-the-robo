@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chitti the Robo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Project Chitti</h1>
+    <p class="intro">
+      Dr. Vaseegaran’s AI marvel, <strong>Chitti the Robo</strong>, has been rebooted. He’s fast, intelligent, and now hiding something. 
+      Your mission: locate what Chitti doesn't want you to find. Only the cleverest will crack the surface.
+    </p>
+
+    <!-- Local GIF -->
+    <div class="gif-container">
+      <img src="{{ url_for('static', filename='robo.gif') }}" alt="Chitti the Robo" class="robo-gif">
+    </div>
+
+    <p class="footer system-msg">
+      Chitti doesn't speak to humans directly. His instructions are embedded for loyal crawlers only — buried where obedient bots are trained to look.
+    </p>
+  </div>
+</body>
+</html>
